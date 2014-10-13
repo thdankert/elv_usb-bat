@@ -2,7 +2,7 @@
 
 ## Prerequisite:  
  * must-have:  
-        > apt-get install libusb-0.1-4 libusb-dev  
+        > apt-get install libusb-0.1-4 libusb-dev build-essential automake autoconf gawk pkg-config libx11-dev
  * if you use freetype2 and TTF-fonts (monospace needed):  
         > apt-get install libfreetype6 libfreetype6-dev ttf-mscorefonts-installer  
 
@@ -13,6 +13,7 @@
 ## copy my files from github to LCDproc
   
 ## configure
+        > autoreconf
         > ./configure --prefix=/usr/local --enable-drivers=glcd --enable-libusb
 
 ##### Note: Enabling the debug() function only in specific files:  
